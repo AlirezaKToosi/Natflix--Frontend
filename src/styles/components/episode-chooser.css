@@ -1,0 +1,14 @@
+.episode-chooser header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: var(--space-small);
+}
+
+.episode-chooser h2,
+.episode-chooser .input-select {
+  margin-bottom: 0;
+}
+
+.episode-chooser .input-select {
+  margin-left: auto;
+}

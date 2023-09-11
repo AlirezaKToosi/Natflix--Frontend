@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "label": "Series",
+    "url": "/media/tv-series"
+  },
+  {
+    "id": 2,
+    "label": "Movies",
+    "url": "/media/movies"
+  },
+  {
+    "id": 3,
+    "label": "Documentaries",
+    "url": "/media/documentaries"
+  }
+]

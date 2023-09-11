@@ -1,0 +1,30 @@
+.navigation-bar {
+  display: flex; /* for aligning items using modern CSS */
+  position: sticky;
+  top: 0; /* so the bar is stick to the top of the screen */
+  background-color: black;
+  width: 100%;
+  height: var(--navigation-bar);
+  padding: 0 var(--page-space);
+  align-items: center; /* used with flex to align items on the vertical axis */
+}
+
+.navigation-bar img {
+  height: 25px;
+  margin-right: var(--space-big);
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: white;
+  margin-right: var(--space-medium);
+}
+
+.navigation-bar .left-items {
+  margin-left: auto; /* used with flex to push the item to the oposite side */
+}
+
+.navigation-bar .button-logout {
+  background-color: transparent;
+  font-weight: normal;
+}

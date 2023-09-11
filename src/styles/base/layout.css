@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: NetflixSans, Helvetica, Arial, sans-serif;
+
+  /* Makes fonts look good on compatible browsers */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box; /* to fix legacy issues with padding messing up when adding with or borders */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  /* make images responsible (mobile first) */
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover; /* To avoid streched images that look distorted */
+}
+
+code {
+  background-color: var(--color-gray-4);
+}
+
+.admin-pages {
+  max-width: 960px;
+  margin: auto;
+}
+
+.admin-pages header {
+  padding-top: var(--navigation-bar);
+}
+
+.admin-pages .item-admin {
+  margin-bottom: var(--space-medium);
+}
+
+.admin-pages .status {
+  height: 50vh;
+}

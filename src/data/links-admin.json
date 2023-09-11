@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "label": "Series",
+    "url": "/admin-media/tv-series",
+    "imageURL": "https://unsplash.com/photos/UBhpOIHnazM/download?force=true&w=640"
+  },
+  {
+    "id": 2,
+    "label": "Movies",
+    "url": "/admin-media/movies",
+    "imageURL": "https://unsplash.com/photos/wMkaMXTJjlQ/download?force=true&w=640"
+  },
+  {
+    "id": 3,
+    "label": "Documentaries",
+    "url": "/admin-media/documentaries",
+    "imageURL": "https://unsplash.com/photos/imMvw-XLuL8/download?&force=true&w=640"
+  }
+]

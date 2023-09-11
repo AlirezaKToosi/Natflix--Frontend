@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "media_id": 1,
+    "season_number": 1,
+    "episode_number": 1,
+    "title": "Seinfeld (pilot)",
+    "summary": "A woman Jerry met in Michigan flies into New York and asks to stay with him, but he's unsure if it's intended to be a romantic situation.",
+    "thumbnail_url": "/fake-images/episodes/1.png",
+    "video_code": "A72K4M1R1tg"
+  },
+  {
+    "id": 2,
+    "media_id": 1,
+    "season_number": 1,
+    "episode_number": 2,
+    "title": "The Stake Out",
+    "summary": "After recently breaking up with Elaine, Jerry meets a woman at a party but only learns where she works, leading him to stake out her office.",
+    "thumbnail_url": "/fake-images/episodes/2.png",
+    "video_code": "jVJ7Vs3Y10w"
+  },
+  {
+    "id": 3,
+    "media_id": 1,
+    "season_number": 1,
+    "episode_number": 3,
+    "title": "The Robbery",
+    "summary": "Jerry's apartment gets robbed, leading him to want to move to a different place and give his current apartment to Elaine.",
+    "thumbnail_url": "/fake-images/episodes/3.png",
+    "video_code": "hQXKyIG_NS4"
+  },
+  {
+    "id": 4,
+    "media_id": 1,
+    "season_number": 2,
+    "episode_number": 1,
+    "title": "The Ex-Girlfriend",
+    "summary": "After George breaks up with a woman he finds annoying, Jerry dates her and also finds her grating, yet he can't bring himself to end the relationship.",
+    "thumbnail_url": "/fake-images/episodes/4.png",
+    "video_code": "PaPxSsK6ZQA"
+  },
+  {
+    "id": 5,
+    "media_id": 1,
+    "season_number": 2,
+    "episode_number": 2,
+    "title": "The Pony Remark",
+    "summary": "When Jerry's parents visit New York, Jerry upsets a family member with a remark about ponies. Kramer wants to build \"levels\" in his apartment.",
+    "thumbnail_url": "/fake-images/episodes/5.png",
+    "video_code": "uzda2bjj6YI"
+  },
+  {
+    "id": 6,
+    "media_id": 1,
+    "season_number": 2,
+    "episode_number": 3,
+    "title": "The Jacket",
+    "summary": "Jerry buys an expensive suede jacket with an odd lining. Jerry and George get stuck alone with Elaine's intimidating father.",
+    "thumbnail_url": "/fake-images/episodes/6.png",
+    "video_code": "9tyGHnm_9Rc"
+  },
+  {
+    "id": 7,
+    "media_id": 1,
+    "season_number": 2,
+    "episode_number": 4,
+    "title": "The Phone Message",
+    "summary": "George goes to great lengths to prevent a woman he's dating from hearing an answering machine message. Jerry's date likes a commercial he hates.",
+    "thumbnail_url": "/fake-images/episodes/7.png",
+    "video_code": "kjAkpnR3Ptg"
+  },
+  {
+    "id": 8,
+    "media_id": 1,
+    "season_number": 3,
+    "episode_number": 2,
+    "title": "The Note",
+    "summary": "Jerry scares a massage therapist, while George questions his sexuality after a massage. Kramer insists he saw Joe DiMaggio at a donut shop.",
+    "thumbnail_url": "/fake-images/episodes/8.png",
+    "video_code": "ptbw05iuYq0"
+  },
+  {
+    "id": 9,
+    "media_id": 1,
+    "season_number": 3,
+    "episode_number": 3,
+    "title": "The Truth",
+    "summary": "George breaks up with his girlfriend, who happens to be in the middle of helping Jerry with a tax audit. Kramer dates Elaine's roommate.",
+    "thumbnail_url": "/fake-images/episodes/9.png",
+    "video_code": "JVte31KnZis"
+  }
+]

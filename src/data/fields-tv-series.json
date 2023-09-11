@@ -1,0 +1,45 @@
+[
+  {
+    "key": "title",
+    "autoFocus": true,
+    "label": "Title",
+    "placeholder": "Example: Back to the Future",
+    "required": true,
+    "type": "text"
+  },
+  {
+    "key": "summary",
+    "autoFocus": false,
+    "label": "Summary",
+    "placeholder": "A time travel story of a boy and his mentor",
+    "required": true,
+    "type": "text-area"
+  },
+  {
+    "key": "genre_id",
+    "autoFocus": false,
+    "label": "Genre",
+    "placeholder": "Plase choose an option",
+    "required": true,
+    "type": "select",
+    "options": ["Horror", "Action", "Comedy", "Drama", "Other"]
+  },
+  {
+    "key": "banner_url",
+    "autoFocus": false,
+    "label": "Banner URL",
+    "placeholder": "www.google.com/banner.png",
+    "required": true,
+    "type": "image",
+    "imageWidth": 1280
+  },
+  {
+    "key": "thumbnail_url",
+    "autoFocus": false,
+    "label": "Thumbail URL",
+    "placeholder": "www.google.com/thumbnail.png",
+    "required": true,
+    "type": "image",
+    "imageWidth": 260
+  }
+]

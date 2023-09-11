@@ -1,0 +1,22 @@
+.item-top-10 {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-top-10 span {
+  color: black;
+  font-size: 230px;
+  font-weight: bold;
+  line-height: 0; /* to remove the vertical space that huge font sizes create */
+  letter-spacing: -35px;
+  text-align: right;
+  -webkit-text-stroke: 4px var(--color-gray-4);
+}
+
+.item-top-10 img {
+  margin-left: -10px; /* to cover the number */
+  width: 120px;
+  height: 170px;
+  background-color: var(--color-gray-3);
+  border-radius: var(--radius);
+}

@@ -1,0 +1,11 @@
+.input {
+  display: block;
+}
+
+.input span {
+  display: block;
+  margin-bottom: var(--space-small);
+  color: white;
+  font-size: var(--default-text-size);
+  font-weight: bold;
+}

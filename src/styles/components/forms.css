@@ -1,0 +1,10 @@
+.form {
+  background-color: var(--color-gray-1);
+  padding: var(--page-space);
+  border: solid 1px var(--color-gray-4);
+  border-radius: var(--radius);
+}
+
+.form .input {
+  margin-bottom: var(--space-medium);
+}

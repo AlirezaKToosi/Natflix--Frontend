@@ -1,0 +1,16 @@
+[
+  {
+    "id": 101,
+    "name": "Eduardo Alvarez",
+    "email": "admin@gmail.com",
+    "password": "admin",
+    "type": 1
+  },
+  {
+    "id": 102,
+    "name": "Roberto Noboa",
+    "email": "customer@gmail.com",
+    "password": "customer",
+    "type": 2
+  }
+]

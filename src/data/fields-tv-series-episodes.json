@@ -1,0 +1,51 @@
+[
+  {
+    "key": "season_number",
+    "autoFocus": true,
+    "label": "Season number",
+    "placeholder": "The season it belongs to",
+    "required": true,
+    "type": "number"
+  },
+  {
+    "key": "episode_number",
+    "autoFocus": true,
+    "label": "Episode number",
+    "placeholder": "The number of the episode",
+    "required": true,
+    "type": "number"
+  },
+  {
+    "key": "title",
+    "autoFocus": true,
+    "label": "Title",
+    "placeholder": "Sacricife of the Angels",
+    "required": true,
+    "type": "text"
+  },
+  {
+    "key": "summary",
+    "autoFocus": true,
+    "label": "Summary",
+    "placeholder": "What's the episode about?",
+    "required": true,
+    "type": "text-area"
+  },
+  {
+    "key": "thumbnail_url",
+    "autoFocus": true,
+    "label": "Thumbnail",
+    "placeholder": "www.google.com/thumbnail.png",
+    "required": true,
+    "type": "image",
+    "imageWidth": 260
+  },
+  {
+    "key": "video_code",
+    "autoFocus": true,
+    "label": "YouTube video code",
+    "placeholder": "The 11 digits of a YouTube video",
+    "required": true,
+    "type": "text"
+  }
+]

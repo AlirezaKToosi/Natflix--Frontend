@@ -1,0 +1,8 @@
+#media h1 {
+  padding: 0 var(--page-space);
+}
+
+/* Overrides the default behavior of having a single row of cards */
+#media .list-cards .container {
+  flex-wrap: wrap;
+}

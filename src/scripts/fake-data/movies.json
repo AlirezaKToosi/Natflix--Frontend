@@ -1,0 +1,56 @@
+[
+  {
+    "id": 16,
+    "title": "Servant of the people",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Tincidunt eget nullam non nisi est sit. Facilisis gravida neque convallis a cras. Non sodales neque sodales ut etiam sit amet nisl. Neque laoreet suspendisse interdum consectetur libero id.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/16.png"
+  },
+  {
+    "id": 17,
+    "title": "Mission Impossible Fallout",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Sem nulla pharetra diam sit amet nisl. Sed risus pretium quam vulputate. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/17.png"
+  },
+  {
+    "id": 18,
+    "title": "Don't Look Up",
+    "media_type_id": 2,
+    "genre_id": 3,
+    "summary": "Nisl rhoncus mattis rhoncus urna neque viverra. Sit amet volutpat consequat mauris nunc congue nisi vitae. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/18.png"
+  },
+  {
+    "id": 19,
+    "title": "Heat",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Tempus quam pellentesque nec nam aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Quis blandit turpis cursus in. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/19.png"
+  },
+  {
+    "id": 20,
+    "title": "Groundhog Day",
+    "media_type_id": 2,
+    "genre_id": 4,
+    "summary": "Iaculis eu non diam phasellus vestibulum lorem sed risus. Nullam eget felis eget nunc lobortis mattis. Orci ac auctor augue mauris augue neque gravida.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/20.png"
+  },
+  {
+    "id": 21,
+    "title": "Moneyball",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/21.png"
+  }
+]

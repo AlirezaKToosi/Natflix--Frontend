@@ -1,0 +1,40 @@
+.item-admin {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-2);
+  padding: var(--space-small) var(--space-medium);
+  border-radius: var(--radius);
+}
+
+.item-admin .number {
+  margin-right: var(--space-medium);
+}
+
+.item-admin img {
+  width: 80px;
+  margin-right: var(--space-medium);
+}
+
+.item-admin h3 {
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.item-admin button:last-child {
+  margin-right: 0;
+}
+
+/* For episodes*/
+.item-admin .season-episode {
+  margin-right: var(--space-big);
+}
+
+.item-admin .season-episode .title {
+  text-transform: uppercase;
+  color: var(--color-gray-4);
+  display: block;
+}
+
+.item-admin .season-episode .numbers {
+  font-weight: bold;
+}

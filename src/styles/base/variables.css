@@ -1,0 +1,45 @@
+/* Colors */
+:root {
+  --color-netflix-red: #e50914;
+  --color-gray-1: #181818;
+  --color-gray-2: #242424;
+  --color-gray-3: #333333;
+  --color-gray-4: #4d4d4d;
+}
+
+/* Spacing */
+:root {
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-big: 32px;
+}
+
+/* Other */
+:root {
+  --default-text-size: 15px; /* to sync the font size of the paragraph to other elements that uses the same size. */
+  --page-space: 50px; /* padding used between the content and the page or modal */
+  --radius: 4px;
+  --navigation-bar: 65px; /* so we can position elements below the navbar */
+}
+
+/* CSS cannot handle variables for media queries, but we list them here so everyone is on the same page */
+/* Media queries */
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}

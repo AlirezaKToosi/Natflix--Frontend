@@ -1,0 +1,47 @@
+[
+  {
+    "id": 22,
+    "title": "The last dance",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Amet commodo nulla facilisi nullam vehicula ipsum. Sit amet luctus venenatis lectus magna fringilla urna. Felis bibendum ut tristique et egestas quis ipsum. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/22.png"
+  },
+  {
+    "id": 23,
+    "title": "Blackfish",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Ipsum dolor sit amet consectetur adipiscing elit ut. Id ornare arcu odio ut sem. Rhoncus dolor purus non enim. Id semper risus in hendrerit gravida rutrum quisque non.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/23.png"
+  },
+  {
+    "id": 24,
+    "title": "Fear city",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/24.png"
+  },
+  {
+    "id": 25,
+    "title": "The Guns of Navarrone",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "At erat pellentesque adipiscing commodo. Augue eget arcu dictum varius duis at. Massa sapien faucibus et molestie ac. Nam libero justo laoreet sit amet cursus sit amet. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/25.png"
+  },
+  {
+    "id": 26,
+    "title": "Outlander",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Tincidunt eget nullam non nisi est sit. Facilisis gravida neque convallis a cras. Non sodales neque sodales ut etiam sit amet nisl. Neque laoreet suspendisse interdum consectetur libero id.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/26.png"
+  }
+]

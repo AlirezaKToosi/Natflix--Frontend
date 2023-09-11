@@ -1,0 +1,56 @@
+.modal-details {
+  width: 320px;
+  max-height: 85vh; /* to enable scrolling when the we have the episode chooser  */
+  background-color: var(--color-gray-1);
+  color: white;
+  border-radius: var(--radius);
+  overflow: scroll;
+  padding-bottom: var(--page-space);
+}
+
+.modal-details .hero,
+.modal-details .description {
+  margin-bottom: var(--space-medium);
+}
+
+.modal-details .description,
+.modal-details .episode-chooser {
+  margin: 0 var(--space-medium);
+}
+
+.modal-details .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-medium);
+}
+
+/* Media queries */
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .modal-details {
+    width: 400px;
+  }
+}
+
+/* Larger than tablets */
+@media (min-width: 750px) {
+  .modal-details {
+    width: 640px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .modal-details {
+    width: 850px;
+  }
+
+  .modal-details .description p {
+    max-width: 460px;
+  }
+
+  .modal-details .description,
+  .modal-details .episode-chooser {
+    margin: 0 var(--page-space);
+  }
+}

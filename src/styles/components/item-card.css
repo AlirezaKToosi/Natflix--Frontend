@@ -1,0 +1,13 @@
+.item-card {
+  overflow: hidden;
+  width: 235px;
+  height: 130px;
+  background-color: var(--color-gray-3);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: scale 0.2s ease-in;
+}
+
+.item-card:hover {
+  scale: 1.075;
+}

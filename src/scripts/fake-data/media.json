@@ -1,0 +1,255 @@
+[
+  {
+    "id": 1,
+    "title": "Seinfield",
+    "media_type_id": 1,
+    "genre_id": 3,
+    "summary": "The show about nothing is a sitcom landmark, with comic Jerry and his three sardonic friends finding laughs in both the mundane and the ridiculous",
+    "poster_url": "/fake-images/posters/1.png",
+    "banner_url": "/fake-images/banners/1.png",
+    "thumbnail_url": "/fake-images/thumbnails/1.png"
+  },
+  {
+    "id": 2,
+    "title": "Gundam II",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Amet commodo nulla facilisi nullam vehicula ipsum. Sit amet luctus venenatis lectus magna fringilla urna. Felis bibendum ut tristique et egestas quis ipsum. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/2.png"
+  },
+  {
+    "id": 3,
+    "title": "Uncoupled",
+    "media_type_id": 1,
+    "genre_id": 3,
+    "summary": "Ipsum dolor sit amet consectetur adipiscing elit ut. Id ornare arcu odio ut sem. Rhoncus dolor purus non enim. Id semper risus in hendrerit gravida rutrum quisque non.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/3.png"
+  },
+  {
+    "id": 4,
+    "title": "Archer",
+    "media_type_id": 1,
+    "genre_id": 3,
+    "summary": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/4.png"
+  },
+  {
+    "id": 5,
+    "title": "Ghost in the Shell SAC 2045",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "At erat pellentesque adipiscing commodo. Augue eget arcu dictum varius duis at. Massa sapien faucibus et molestie ac. Nam libero justo laoreet sit amet cursus sit amet. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/5.png"
+  },
+  {
+    "id": 6,
+    "title": "Cowboy Bebop",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Tincidunt eget nullam non nisi est sit. Facilisis gravida neque convallis a cras. Non sodales neque sodales ut etiam sit amet nisl. Neque laoreet suspendisse interdum consectetur libero id.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/6.png"
+  },
+  {
+    "id": 7,
+    "title": "Money Heist",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Sem nulla pharetra diam sit amet nisl. Sed risus pretium quam vulputate. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/7.png"
+  },
+  {
+    "id": 8,
+    "title": "Narcos Mexico",
+    "media_type_id": 1,
+    "genre_id": 4,
+    "summary": "Nisl rhoncus mattis rhoncus urna neque viverra. Sit amet volutpat consequat mauris nunc congue nisi vitae. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/8.png"
+  },
+  {
+    "id": 9,
+    "title": "Gundam Char's Counter Attack",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Tempus quam pellentesque nec nam aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Quis blandit turpis cursus in. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/9.png"
+  },
+  {
+    "id": 10,
+    "title": "Neon Genesis Evangelion",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Iaculis eu non diam phasellus vestibulum lorem sed risus. Nullam eget felis eget nunc lobortis mattis. Orci ac auctor augue mauris augue neque gravida.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/10.png"
+  },
+  {
+    "id": 11,
+    "title": "Designated Survivor",
+    "media_type_id": 1,
+    "genre_id": 4,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/11.png"
+  },
+  {
+    "id": 12,
+    "title": "Queen's Gambit",
+    "media_type_id": 1,
+    "genre_id": 4,
+    "summary": "Amet commodo nulla facilisi nullam vehicula ipsum. Sit amet luctus venenatis lectus magna fringilla urna. Felis bibendum ut tristique et egestas quis ipsum. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/12.png"
+  },
+  {
+    "id": 13,
+    "title": "Community",
+    "media_type_id": 1,
+    "genre_id": 3,
+    "summary": "Ipsum dolor sit amet consectetur adipiscing elit ut. Id ornare arcu odio ut sem. Rhoncus dolor purus non enim. Id semper risus in hendrerit gravida rutrum quisque non.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/13.png"
+  },
+  {
+    "id": 14,
+    "title": "Vikings",
+    "media_type_id": 1,
+    "genre_id": 2,
+    "summary": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/14.png"
+  },
+  {
+    "id": 15,
+    "title": "Better Call Saul",
+    "media_type_id": 1,
+    "genre_id": 4,
+    "summary": "At erat pellentesque adipiscing commodo. Augue eget arcu dictum varius duis at. Massa sapien faucibus et molestie ac. Nam libero justo laoreet sit amet cursus sit amet. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/15.png"
+  },
+  {
+    "id": 16,
+    "title": "Servant of the people",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "A political satire comedy about a high-school history teacher in his thirties who is unexpectedly elected President after a viral video filmed by one of his students shows him making a profane rant against government corruption.",
+    "banner_url": "/fake-images/banners/16.png",
+    "thumbnail_url": "/fake-images/thumbnails/16.png"
+  },
+  {
+    "id": 17,
+    "title": "Mission Impossible Fallout",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Sem nulla pharetra diam sit amet nisl. Sed risus pretium quam vulputate. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/17.png"
+  },
+  {
+    "id": 18,
+    "title": "Don't Look Up",
+    "media_type_id": 2,
+    "genre_id": 3,
+    "summary": "Nisl rhoncus mattis rhoncus urna neque viverra. Sit amet volutpat consequat mauris nunc congue nisi vitae. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/18.png"
+  },
+  {
+    "id": 19,
+    "title": "Heat",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Tempus quam pellentesque nec nam aliquam. Viverra orci sagittis eu volutpat odio facilisis mauris sit amet. Quis blandit turpis cursus in. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/19.png"
+  },
+  {
+    "id": 20,
+    "title": "Groundhog Day",
+    "media_type_id": 2,
+    "genre_id": 4,
+    "summary": "Iaculis eu non diam phasellus vestibulum lorem sed risus. Nullam eget felis eget nunc lobortis mattis. Orci ac auctor augue mauris augue neque gravida.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/20.png"
+  },
+  {
+    "id": 21,
+    "title": "Moneyball",
+    "media_type_id": 2,
+    "genre_id": 2,
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/21.png"
+  },
+  {
+    "id": 22,
+    "title": "The last dance",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Directed by Jason Hehir, the series revolves around the career of Michael Jordan, with particular focus on the 1997 season, his final season with the Chicago Bulls.",
+    "banner_url": "/fake-images/banners/22.png",
+    "thumbnail_url": "/fake-images/thumbnails/22.png"
+  },
+  {
+    "id": 23,
+    "title": "Blackfish",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Ipsum dolor sit amet consectetur adipiscing elit ut. Id ornare arcu odio ut sem. Rhoncus dolor purus non enim. Id semper risus in hendrerit gravida rutrum quisque non.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/23.png"
+  },
+  {
+    "id": 24,
+    "title": "Fear city",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/24.png"
+  },
+  {
+    "id": 25,
+    "title": "The Guns of Navarrone",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "At erat pellentesque adipiscing commodo. Augue eget arcu dictum varius duis at. Massa sapien faucibus et molestie ac. Nam libero justo laoreet sit amet cursus sit amet. ",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/25.png"
+  },
+  {
+    "id": 26,
+    "title": "Outlander",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Tincidunt eget nullam non nisi est sit. Facilisis gravida neque convallis a cras. Non sodales neque sodales ut etiam sit amet nisl. Neque laoreet suspendisse interdum consectetur libero id.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/26.png"
+  },
+  {
+    "id": 27,
+    "title": "Iron fist Kung fu Kicks",
+    "media_type_id": 3,
+    "genre_id": 5,
+    "summary": "Sem nulla pharetra diam sit amet nisl. Sed risus pretium quam vulputate. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.",
+    "banner_url": "",
+    "thumbnail_url": "/fake-images/thumbnails/27.png"
+  },
+  {
+    "id": 28,
+    "title": "Cyberpunk 2770: Edgerunners",
+    "media_type_id": 1,
+    "genre_id": 3,
+    "summary": "In a dystopia riddled with corruption and cybernetic implants, talented but reckless street kid strives to become a mercenary outlaw -an edgerunner.",
+    "banner_url": "/fake-images/banners/28.png",
+    "thumbnail_url": ""
+  }
+]

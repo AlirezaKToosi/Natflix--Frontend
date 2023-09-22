@@ -8,45 +8,39 @@
     "type": "text"
   },
   {
-    "key": "summary",
+    "key": "type_id",
     "autoFocus": false,
-    "label": "Summary",
-    "placeholder": "A time travel story of a boy and his mentor",
+    "label": "Type of content",
+    "placeholder": "1 = series, 2 = movies, 3 = documentaries",
     "required": true,
-    "type": "text-area"
+    "type": "select",
+    "options": ["Series", "Movies", "Documentaries"]
   },
   {
-    "key": "genre_id",
+    "key": "category_id",
     "autoFocus": false,
-    "label": "Genre",
-    "placeholder": "Plase choose an option",
+    "label": "Type of category",
+    "placeholder": "1: horror, 2: action, 3: comedy, 4: drama, 5: other",
     "required": true,
     "type": "select",
     "options": ["Horror", "Action", "Comedy", "Drama", "Other"]
   },
   {
-    "key": "director",
+    "key": "summary",
     "autoFocus": false,
-    "label": "Director",
-    "placeholder": "Steven Spielberg",
+    "label": "Summary",
+    "placeholder": "A time travel story of a boy and his mentor",
     "required": true,
     "type": "text"
   },
   {
-    "key": "rating",
+    "key": "logo_url",
     "autoFocus": false,
-    "label": "Rotten tomatoes rating (0-100)",
-    "placeholder": "85",
-    "required": true,
-    "type": "number"
-  },
-  {
-    "key": "video_code",
-    "autoFocus": true,
-    "label": "YouTube video code",
-    "placeholder": "The 11 digits of a YouTube video",
-    "required": true,
-    "type": "text"
+    "label": "Logo URL",
+    "placeholder": "www.google.com/logo.png",
+    "required": false,
+    "type": "image",
+    "imageWidth": 400
   },
   {
     "key": "banner_url",

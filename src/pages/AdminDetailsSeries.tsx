@@ -1,20 +1,19 @@
-// Fake data (replace this with a real fetch)
-import fakeFetch from "scripts/fakeFetch";
-
 // Node modules
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Project files
 import FormCreate from "components/FormCreate";
+import FormDelete from "components/FormDelete";
+import FormUpdate from "components/FormUpdate";
 import NavigationBarAdmin from "components/NavigationBarAdmin";
 import StatusEmpty from "components/StatusEmpty";
 import StatusError from "components/StatusError";
 import StatusLoading from "components/StatusLoading";
-import fields from "data/fields-tv-series-episodes.json";
-import eStatus from "types/eStatus";
-import iTVSeries from "types/iTVSeries";
-import Item from "components/ItemAdminEpisode";
+import Fields from "data/fields-details-series.json";
+import eStatus from "interfaces/eStatus";
+import iDetailsSeries from "interfaces/iDetailsSeries";
+import ItemAdmin from "components/ItemAdminEpisode";
 import { useModal } from "state/ModalContext";
 
 export default function AdminDetailSeries() {
@@ -24,19 +23,17 @@ export default function AdminDetailSeries() {
 
   // Local state
   const [status, setStatus] = useState(eStatus.LOADING);
-  const [data, setData] = useState(new Array<iTVSeries>());
-
-  // Properties
-  const endPoint: string = "tv-series/:id/";
+  const [data, setData] = useState(new Array<iDetailsSeries>());
 
   // Methods
   useEffect(() => {
-    fakeFetch(endPoint, code)
-      .then((response) => onSuccess(response.data))
+    fetch(code + "/")
+      .then((response) => response.json())
+      .then((result) => onSuccess(result))
       .catch((error) => onFailure(error));
   }, []);
 
-  function onSuccess(data: iTVSeries[]) {
+  function onSuccess(data: iDetailsSeries[]) {
     setData(data);
     setStatus(eStatus.READY);
   }
@@ -46,10 +43,25 @@ export default function AdminDetailSeries() {
     setStatus(eStatus.ERROR);
   }
 
+  function onCreate() {
+    setModal(<FormCreate fields={Fields} endPoint={"create/" + code} />);
+  }
+
+  function onUpdate(item: iDetailsSeries) {
+    setModal(
+      <FormUpdate endPoint={"update/" + code} fields={Fields} data={item} />
+    );
+  }
+
+  function onDelete(id: number) {
+    setModal(
+      <FormDelete endPoint={"/admin-content/delete-episode/"} id={id} />
+    );
+  }
+
   // Components
-  const Create = <FormCreate fields={fields} endPoint={endPoint} />;
   const Items = data.map((item) => (
-    <Item key={item.id} item={item} endPoint={endPoint} fields={fields} />
+    <ItemAdmin key={item.id} item={item} actions={[onUpdate, onDelete]} />
   ));
 
   // Safeguards
@@ -57,14 +69,14 @@ export default function AdminDetailSeries() {
   if (status === eStatus.ERROR) return <StatusError />;
 
   return (
-    <div className="admin-pages">
+    <div id="admin-detail-series" className="admin-pages">
       <NavigationBarAdmin />
-      <h1>TV Series episodes</h1>
+      <header>
+        <h1>Admin details</h1>
+      </header>
       {data.length === 0 ? <StatusEmpty /> : Items}
       <hr />
-      <button className="primary" onClick={() => setModal(Create)}>
-        Create episode
-      </button>
+      <button onClick={onCreate}>Create episode</button>
     </div>
   );
 }

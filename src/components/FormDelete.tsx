@@ -3,7 +3,6 @@ import { FormEvent } from "react";
 
 // Project files
 import { useModal } from "state/ModalContext";
-import fakeFetch from "scripts/fakeFetch";
 
 interface iProps {
   endPoint: string;
@@ -17,7 +16,9 @@ export default function FormDelete({ endPoint, id }: iProps) {
   // Methods
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    fakeFetch(endPoint + "delete/", id)
+    fetch(endPoint + id, {
+      method: "delete",
+    })
       .then(onSuccess)
       .catch((error) => onFailure(error));
   }
@@ -40,8 +41,10 @@ export default function FormDelete({ endPoint, id }: iProps) {
         reverted.
       </p>
       <hr />
-      <button>Delete</button>
-      <button onClick={() => setModal(null)}>Keep</button>
+      <button className="button-gray">Delete</button>
+      <button className="button-gray" onClick={() => setModal(null)}>
+        Keep
+      </button>
     </form>
   );
 }

@@ -5,7 +5,6 @@ import { FormEvent, useState } from "react";
 import ListInput from "components/ListInput";
 import { generateFields } from "scripts/formUtilities";
 import { useModal } from "state/ModalContext";
-import fakeFetch from "scripts/fakeFetch";
 
 interface iProps {
   endPoint: string;
@@ -23,9 +22,17 @@ export default function FormUpdate({ endPoint, fields, data }: iProps) {
   // Methods
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     const editedItem = { ...form, id: data.id };
-
     event.preventDefault();
-    fakeFetch(endPoint + "update/", editedItem)
+    fetch(endPoint + "/", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json;charset=UTF-8",
+      },
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      body: JSON.stringify(editedItem),
+    })
       .then(onSuccess)
       .catch((error) => onFailure(error));
   }
@@ -42,11 +49,13 @@ export default function FormUpdate({ endPoint, fields, data }: iProps) {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <h2>Edit information</h2>
+      <h2>New information</h2>
       <ListInput fields={fields} state={[form, setForm]} />
       <hr />
-      <button>Update</button>
-      <button onClick={() => setModal(null)}>Cancel</button>
+      <button className="button-gray">Update</button>
+      <button className="button-gray" onClick={() => setModal(null)}>
+        Cancel
+      </button>
     </form>
   );
 }

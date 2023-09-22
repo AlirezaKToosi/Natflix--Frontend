@@ -1,0 +1,8 @@
+{
+  "key": "video_code",
+  "autoFocus": true,
+  "label": "Video code",
+  "placeholder": "The 11 digits of a YouTube video",
+  "required": true,
+  "type": "text"
+}

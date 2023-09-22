@@ -1,15 +1,15 @@
 // Node modules
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 
 // Project files
 import ItemEpisodes from "components/ItemEpisode";
 import InputSelect from "components/InputSelect";
-import iTVSeries from "types/iTVSeries";
-import Utilities from "scripts/seriesUtilities";
-import iInputSelect from "types/iInputSelect";
+import iDetailsSeries from "interfaces/iDetailsSeries";
+import SeriesUtilities from "scripts/seriesUtilities";
+import iInputSelect from "interfaces/iInputSelect";
 
 interface iProps {
-  episodes: iTVSeries[];
+  episodes: iDetailsSeries[];
   onClick: Function;
 }
 
@@ -18,9 +18,12 @@ export default function EpisodeChooser({ episodes, onClick }: iProps) {
   const [data, setData] = useState({ season_number: 1 });
 
   // Properties
-  const totalSeasons = Utilities.getTotalSeasons(episodes);
-  const currentEpisodes = Utilities.getEpisodes(episodes, data.season_number);
-  const inputSelectLabels = Utilities.getSeasonLabels(totalSeasons);
+  const numberOfSeasons = SeriesUtilities.getSeasonsNumber(episodes);
+  const currentEpisodes = SeriesUtilities.getEpisodes(
+    episodes,
+    data.season_number
+  );
+  const inputSelectLabels = SeriesUtilities.getSeasonLabels(numberOfSeasons);
   const fields: iInputSelect = {
     key: "season_number",
     label: "",

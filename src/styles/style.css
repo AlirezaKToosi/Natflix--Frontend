@@ -12,11 +12,9 @@
 @import "./components/input.css";
 @import "./components/input-field.css";
 @import "./components/input-image.css";
-@import "./components/input-text-area.css";
 @import "./components/input-select.css";
 @import "./components/item-admin.css";
 @import "./components/item-card.css";
-@import "./components/list-cards.css";
 @import "./components/item-episode.css";
 @import "./components/item-top-10.css";
 @import "./components/modal-details.css";
@@ -26,8 +24,7 @@
 
 /* Pages */
 @import "./pages/admin.css";
-@import "./pages/media.css";
 @import "./pages/auth.css";
+@import "./pages/content.css";
 @import "./pages/home.css";
-@import "./pages/not-found.css";
 @import "./pages/video-player.css";

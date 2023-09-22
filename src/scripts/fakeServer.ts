@@ -1,77 +1,66 @@
 // Fake data
-import Media from "./fake-data/media.json";
 import Users from "./fake-data/users.json";
+import Content from "./fake-data/content.json";
 import Documentaries from "./fake-data/documentaries.json";
 import Movies from "./fake-data/movies.json";
-import Series from "./fake-data/tv-series.json";
-import SingleDocumentary from "./fake-data/single-documentary.json";
-import SingleMovie from "./fake-data/single-movie.json";
-import SingleSerie from "./fake-data/single-tv-series.json";
+import Series from "./fake-data/series.json";
+import SingleDocumentary from "./fake-data/singleDocumentary.json";
+import SingleMovie from "./fake-data/singleMovie.json";
+import SingleSerie from "./fake-data/singleSerie.json";
 
 // Project files
-import eMediaType from "types/eMediaType";
-import iMedia from "types/iMedia";
-import iDetailsOther from "types/iDetailsOther";
-import iTVSeries from "types/iTVSeries";
-import eUserType from "types/eUserType";
+import eContentType from "interfaces/eContentType";
+import iContent from "interfaces/iContent";
+import iDetailsOther from "interfaces/iDetailsOther";
+import iDetailsSeries from "interfaces/iDetailsSeries";
+import eUserType from "interfaces/eUserType";
 
 export default function fakeServer(endPoint: string, data: any = null): any {
   switch (endPoint) {
-    // Media
-    case "media/":
-      return Media;
-    case "media/create/":
-      return mediaCreate(data);
-    case "media/delete/":
-      return mediaDelete(data);
-    case "media/update/":
-      return mediaUpdate(data);
-
     // Auth
     case "login/":
       return authLogin(data);
     case "register/":
       return authRegister(data);
 
-    // Media filtered
-    case "media/tv-series/":
+    // Content
+    case "content/":
+      return Content;
+    case "content/create/":
+      return contentCreate(data);
+    case "content/delete/":
+      return contentDelete(data);
+    case "content/update/":
+      return contentUpdate(data);
+
+    // Content filtered
+    case "content/series/":
       return Series;
-    case "media/movies/":
+    case "content/movies/":
       return Movies;
-    case "media/documentaries/":
+    case "content/documentaries/":
       return Documentaries;
 
-    // Movies
-    case "movies/:id/":
+    // Details others
+    case "details-other/:id/":
       return detailsOther(data);
-    case "movies/:id/update/":
+    case "details-other/:id/update/":
       return detailsOtherUpdate(data);
 
-    // Documentaries
-    case "documentaries/:id/":
-      return detailsOther(data);
-    case "documentaries/:id/update/":
-      return detailsOtherUpdate(data);
-
-    // TV Series
-    case "tv-series/:id/":
+    // Details series
+    case "details-series/:id/":
       return detailsSeries(data);
-    case "tv-series/:id/create/":
+    case "details-series/:id/create/":
       return detailsSeriesCreate(data);
-    case "tv-series/:id/update/":
+    case "details-series/:id/update/":
       return detailsSeriesUpdate(data);
-    case "tv-series/:id/delete/":
+    case "details-series/:id/delete/":
       return detailsSeriesDelete(data);
 
     // Exception
     default:
       throw new Error(`invalid endpoint ${endPoint}`);
   }
-}
-
-// Media
-function mediaCreate(item: iMedia): string {
-  return `Created new media ${item.title}`;
 }
 
 // Auth
@@ -118,22 +107,26 @@ function authRegister(data: any) {
 }
 
 // Content
-function mediaUpdate(item: iMedia): string {
-  return `Updated media ${item.title}`;
+function contentCreate(item: iContent): string {
+  return `Created new content ${item.title}`;
 }
 
-function mediaDelete(id: number): string {
-  return `Deleted media with id ${id}`;
+function contentUpdate(item: iContent): string {
+  return `Updated content ${item.title}`;
+}
+
+function contentDelete(id: number): string {
+  return `Deleted content with id ${id}`;
 }
 
 // Details other
 function detailsOther(id: number): iDetailsOther {
-  const media = Media.filter((item) => item.id === Number(id))[0];
+  const content = Content.filter((item) => item.id === Number(id))[0];
 
-  switch (media.media_type_id) {
-    case eMediaType.MOVIES:
+  switch (content.type_id) {
+    case eContentType.MOVIES:
       return SingleMovie;
-    case eMediaType.DOCUMENTARIES:
+    case eContentType.DOCUMENTARIES:
       return SingleDocumentary;
     default:
       throw new Error(`Invalid type id ${id}`);
@@ -141,26 +134,26 @@ function detailsOther(id: number): iDetailsOther {
 }
 
 function detailsOtherUpdate(item: iDetailsOther): string {
-  return `Update media details id ${item.id}`;
+  return `Update content details id ${item.id}`;
 }
 
-// Details tv-series
-function detailsSeries(id: number): iTVSeries[] {
-  const media = Media.filter((item) => item.id === Number(id))[0];
+// Details series
+function detailsSeries(id: number): iDetailsSeries[] {
+  const content = Content.filter((item) => item.id === Number(id))[0];
 
-  switch (media.media_type_id) {
-    case eMediaType.SERIES:
+  switch (content.type_id) {
+    case eContentType.SERIES:
       return SingleSerie;
     default:
       throw new Error(`Invalid type id ${id}`);
   }
 }
 
-function detailsSeriesCreate(item: iTVSeries) {
+function detailsSeriesCreate(item: iDetailsSeries) {
   return `Created new episode ${item.title}`;
 }
 
-function detailsSeriesUpdate(item: iTVSeries) {
+function detailsSeriesUpdate(item: iDetailsSeries) {
   return `Update episode ${item.title}`;
 }
 

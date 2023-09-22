@@ -29,7 +29,7 @@
     "label": "Summary",
     "placeholder": "What's the episode about?",
     "required": true,
-    "type": "text-area"
+    "type": "text"
   },
   {
     "key": "thumbnail_url",
@@ -43,7 +43,7 @@
   {
     "key": "video_code",
     "autoFocus": true,
-    "label": "YouTube video code",
+    "label": "Video code",
     "placeholder": "The 11 digits of a YouTube video",
     "required": true,
     "type": "text"

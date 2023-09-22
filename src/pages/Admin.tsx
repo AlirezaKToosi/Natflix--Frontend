@@ -2,12 +2,12 @@
 import { Link } from "react-router-dom";
 
 // Project files
-import NavigationBar from "components/NavigationBarAdmin";
-import data from "data/links-admin.json";
+import NavigationBarAdmin from "components/NavigationBarAdmin";
+import AdminLinks from "data/links-admin.json";
 
 export default function Admin() {
   // Components
-  const Links = data.map((item) => (
+  const Links = AdminLinks.map((item) => (
     <Link key={item.id} className="item" to={item.url}>
       <img src={item.imageURL} />
       <h3>{item.label}</h3>
@@ -16,9 +16,13 @@ export default function Admin() {
 
   return (
     <div id="admin" className="admin-pages">
-      <NavigationBar />
-      <h1>Admin main menu</h1>
-      <p>Please choose one of the following options to start adding content:</p>
+      <NavigationBarAdmin />
+      <header>
+        <h1>Admin main menu</h1>
+        <p>
+          Please choose one of the following options to start adding content:
+        </p>
+      </header>
       <div className="items">{Links}</div>
     </div>
   );

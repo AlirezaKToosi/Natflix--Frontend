@@ -1,39 +1,35 @@
-// Fake data (replace this with a real fetch)
-import fakeFetch from "scripts/fakeFetch";
-
 // Node modules
 import { useParams } from "react-router-dom";
 
 // Project files
-import HeroHome from "components/HeroHome";
+import BannerHome from "components/HeroHome";
 import ContainerCards from "components/ListCards";
 import NavigationBar from "components/NavigationBar";
 import StatusEmpty from "components/StatusEmpty";
 import StatusError from "components/StatusError";
 import StatusLoading from "components/StatusLoading";
-import eStatus from "types/eStatus";
-import iMedia from "types/iMedia";
+import eStatus from "interfaces/eStatus";
+import iContent from "interfaces/iContent";
 import { useState, useEffect } from "react";
 
-export default function Media() {
+export default function Content() {
   // Global state
   const { code } = useParams();
 
   // Local state
   const [status, setStatus] = useState(eStatus.LOADING);
-  const [data, setData] = useState(new Array<iMedia>());
-
-  // Properties
-  const endPoint = "media/";
+  const [data, setData] = useState(new Array<iContent>());
 
   // Methods
   useEffect(() => {
-    fakeFetch(endPoint + code + "/")
-      .then((response) => onSuccess(response.data))
+    setStatus(eStatus.LOADING);
+    fetch( code + "/")
+      .then((response) => response.json())
+      .then((result) => onSuccess(result))
       .catch((error) => onFailure(error));
   }, [code]);
 
-  function onSuccess(data: iMedia[]) {
+  function onSuccess(data: iContent[]) {
     setData(data);
     setStatus(eStatus.READY);
   }
@@ -49,9 +45,11 @@ export default function Media() {
   if (data.length === 0) return <StatusEmpty />;
 
   return (
-    <div id="media">
+    <div id="content">
       <NavigationBar />
-      <h1>All our {code}</h1>
+      <header>
+        <h1>All our {code}</h1>
+      </header>
       <ContainerCards title="Titles avaialble" data={data} />
     </div>
   );

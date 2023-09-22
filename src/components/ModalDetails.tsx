@@ -1,6 +1,3 @@
-// Fake data
-import fakeFetch from "scripts/fakeFetch";
-
 // Node modules
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -11,21 +8,19 @@ import HeroDetails from "components/HeroDetails";
 import StatusEmpty from "components/StatusEmpty";
 import StatusError from "components/StatusError";
 import StatusLoading from "components/StatusLoading";
+import eStatus from "interfaces/eStatus";
+import iContent from "interfaces/iContent";
+import eContentType from "interfaces/eContentType";
+import iDetailsOther from "interfaces/iDetailsOther";
+import iDetailsSeries from "interfaces/iDetailsSeries";
 import { useModal } from "state/ModalContext";
-import eStatus from "types/eStatus";
-import iMedia from "types/iMedia";
-import eMediaType from "types/eMediaType";
-import iDetailsOther from "types/iDetailsOther";
-import iTVSeries from "types/iTVSeries";
-import DetailsMovie from "./DetailsMovie";
-import DetailsDocumentary from "./DetailsDocumentary";
 
 interface iProps {
-  item: iMedia;
+  item: iContent;
 }
 
 export default function ModalDetails({ item }: iProps) {
-  const { id, title, summary, media_type_id } = item;
+  const { id, type_id, title, summary } = item;
 
   // Global state
   const navigate = useNavigate();
@@ -34,28 +29,33 @@ export default function ModalDetails({ item }: iProps) {
   // Local state
   const [status, setStatus] = useState(eStatus.LOADING);
   const [dataOther, setDataOther] = useState({} as iDetailsOther);
-  const [dataSerie, setDataSerie] = useState(Array<iTVSeries>);
+  const [dataSerie, setDataSerie] = useState(Array<iDetailsSeries>);
 
   // Properties
-  const isTVSeries: boolean = media_type_id === eMediaType.SERIES;
-  const isMovie: boolean = media_type_id === eMediaType.MOVIES;
-  const isDocumentary: boolean = media_type_id === eMediaType.DOCUMENTARIES;
+  const isASeries: boolean = type_id === eContentType.SERIES;
   const emptyOther: boolean = Object(dataOther).length === 0;
   const emptySeries: boolean = dataSerie.length === 0;
-  const endPoint = chooseEndPoint(media_type_id);
-  const videoCode = isTVSeries
-    ? dataSerie[0]?.video_code
-    : dataOther.video_code;
+  const videoCode = isASeries ? dataSerie[0]?.video_code : dataOther.video_code;
+
+  let endPoint = "";
+  if (type_id === eContentType.SERIES) {
+    endPoint = "details-series/" + id;
+  } else if (type_id === eContentType.MOVIES) {
+    endPoint = "details-movies/" + id;
+  } else {
+    endPoint = "details-documentaries/" + id;
+  }
 
   // Methods
   useEffect(() => {
-    fakeFetch(endPoint, id)
-      .then((response) => onSuccess(response.data))
+    fetch(endPoint + "/")
+      .then((response) => response.json())
+      .then((result) => onSuccess(result))
       .catch((error) => onFailure(error));
   }, []);
 
   function onSuccess(data: any) {
-    isTVSeries ? setDataSerie(data) : setDataOther(data);
+    isASeries ? setDataSerie(data) : setDataOther(data);
     setStatus(eStatus.READY);
   }
 
@@ -64,20 +64,7 @@ export default function ModalDetails({ item }: iProps) {
     setStatus(eStatus.ERROR);
   }
 
-  function chooseEndPoint(media_type_id: number) {
-    switch (media_type_id) {
-      case eMediaType.MOVIES:
-        return "movies/:id/";
-      case eMediaType.DOCUMENTARIES:
-        return "documentaries/:id/";
-      case eMediaType.SERIES:
-        return "tv-series/:id/";
-      default:
-        throw new Error(`Invalid media type id ${media_type_id}`);
-    }
-  }
-
-  function goVideo(videoCode: string): void {
+  function onClick(videoCode: string): void {
     navigate(`video/${videoCode}`);
     setModal(null);
   }
@@ -89,14 +76,12 @@ export default function ModalDetails({ item }: iProps) {
 
   return (
     <div className="modal-details">
-      <HeroDetails item={item} videoCode={videoCode} onClick={goVideo} />
+      <HeroDetails item={item} videoCode={videoCode} onClick={onClick} />
       <section className="description">
-        {isMovie && <DetailsMovie details={dataOther} />}
-        {isDocumentary && <DetailsDocumentary details={dataOther} />}
         <h2>{title}</h2>
         <p>{summary}</p>
       </section>
-      {isTVSeries && <EpisodeChooser episodes={dataSerie} onClick={goVideo} />}
+      {isASeries && <EpisodeChooser episodes={dataSerie} onClick={onClick} />}
     </div>
   );
 }

@@ -2,17 +2,18 @@
 import { Routes, Route } from "react-router-dom";
 
 // Project files
-import Media from "pages/Media";
+import Content from "pages/Content";
 import Home from "pages/Home";
-import NotFound from "pages/NotFound";
+import SignIn from "pages/SignIn";
 import VideoPlayer from "pages/VideoPlayer";
 
 export default function CustomerRoutes() {
   return (
     <Routes>
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<SignIn />} />
       <Route path="/" element={<Home />} />
-      <Route path="/media/:code" element={<Media />} />
+      <Route path="/content" element={<Home />} />
+      <Route path="/content/:code" element={<Content />} />
       <Route path="/video/:code" element={<VideoPlayer />} />
     </Routes>
   );

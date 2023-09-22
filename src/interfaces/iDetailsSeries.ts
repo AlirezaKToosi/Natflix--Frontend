@@ -4,9 +4,9 @@
  *
  * Note: season_number and episode_number seen redundant but is to be clear that is just the number and not the whole data
  */
-export default interface iTVSeries {
+export default interface iDetailsSeries {
   id: number;
-  media_id: number;
+  content_id: number;
   season_number: number;
   episode_number: number;
   title: string;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // Project files
 import Logo from "assets/images/logo.svg";
-import data from "data/links-customer.json";
+import CustomerLinks from "data/links-customer.json";
 import { useUser } from "state/UserContext";
 
 export default function NavigationBar() {
@@ -11,7 +11,7 @@ export default function NavigationBar() {
   const { setUser } = useUser();
 
   // Components
-  const Links = data.map((item) => (
+  const Links = CustomerLinks.map((item) => (
     <Link key={item.id} to={item.url}>
       {item.label}
     </Link>
@@ -19,15 +19,15 @@ export default function NavigationBar() {
 
   return (
     <nav className="navigation-bar">
-      <Link to={"/"}>
+      <Link to={CustomerLinks[0].url}>
         <img src={Logo} />
       </Link>
-      <div>{Links}</div>
+      <div className="links">{Links}</div>
       <div className="left-items">
         {/* Search bar goes here... */}
-        <button className="button-logout" onClick={() => setUser(null)}>
+        <Link to="/" onClick={() => setUser(null)}>
           Logout
-        </button>
+        </Link>
       </div>
     </nav>
   );

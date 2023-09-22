@@ -1,10 +1,10 @@
 // Project files
 import ItemCard from "components/ItemCard";
-import iMedia from "types/iMedia";
+import iContent from "interfaces/iContent";
 
 interface iProps {
   title: String;
-  data: iMedia[];
+  data: iContent[];
 }
 
 export default function ListCards({ title, data }: iProps) {
@@ -12,11 +12,9 @@ export default function ListCards({ title, data }: iProps) {
   const Cards = data.map((item) => <ItemCard key={item.id} item={item} />);
 
   return (
-    <section className="list-cards">
+    <section className="card-list">
       <h2>{title}</h2>
-      <div className="scroller">
-        <div className="container">{Cards}</div>
-      </div>
+      <div>{Cards}</div>
     </section>
   );
 }

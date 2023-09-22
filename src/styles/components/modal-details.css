@@ -18,12 +18,6 @@
   margin: 0 var(--space-medium);
 }
 
-.modal-details .row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--space-medium);
-}
-
 /* Media queries */
 /* Larger than phablet */
 @media (min-width: 550px) {

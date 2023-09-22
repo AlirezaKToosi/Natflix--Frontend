@@ -6,7 +6,7 @@ export default function StatusEmpty() {
     <div className="status">
       <div className="content">
         <img src={Icon} />
-        <p>We are working on adding please come back soon!</p>
+        <p>We are working on adding content please come back soon!</p>
       </div>
     </div>
   );

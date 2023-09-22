@@ -1,8 +1,8 @@
 // Project files
-import iTVSeries from "types/iTVSeries";
+import iDetailsSeries from "interfaces/iDetailsSeries";
 
 export default class SeriesUtilities {
-  public static getTotalSeasons(episodes: iTVSeries[]): number {
+  public static getSeasonsNumber(episodes: iDetailsSeries[]): number {
     const seasonsAvailable = episodes.map((item) => item.season_number);
     const seasonsSorted = seasonsAvailable.sort((a, b) => b - a);
     const result: number = seasonsSorted[0]; // take the highest number
@@ -10,7 +10,7 @@ export default class SeriesUtilities {
     return result;
   }
 
-  public static getEpisodes(episodes: iTVSeries[], season: number) {
+  public static getEpisodes(episodes: iDetailsSeries[], season: number) {
     return episodes.filter((item) => item.season_number === Number(season));
   }
 

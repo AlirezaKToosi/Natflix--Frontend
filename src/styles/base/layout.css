@@ -30,10 +30,6 @@ img {
   object-fit: cover; /* To avoid streched images that look distorted */
 }
 
-code {
-  background-color: var(--color-gray-4);
-}
-
 .admin-pages {
   max-width: 960px;
   margin: auto;

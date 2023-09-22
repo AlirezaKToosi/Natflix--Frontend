@@ -2,15 +2,15 @@
   {
     "id": 101,
     "name": "Eduardo Alvarez",
-    "email": "admin@gmail.com",
-    "password": "admin",
+    "email": "eduardo.alvarez@novare.se",
+    "password": "12345678",
     "type": 1
   },
   {
     "id": 102,
-    "name": "Roberto Noboa",
-    "email": "customer@gmail.com",
-    "password": "customer",
+    "name": "Carl Deer",
+    "email": "carl@gmail.com",
+    "password": "abc123",
     "type": 2
   }
 ]

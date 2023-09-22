@@ -1,25 +1,30 @@
 // Project files
 import IconPlay from "assets/images/icons/icon-play-black.svg";
 import Placeholder from "assets/images/placeholders/banner.png";
-import iMedia from "types/iMedia";
+import iContent from "interfaces/iContent";
 
 interface iProps {
-  item: iMedia;
+  item: iContent;
   videoCode: string;
   onClick: Function;
 }
 
 export default function HeroDetails({ item, videoCode, onClick }: iProps) {
-  const { banner_url } = item;
+  const { banner_url, logo_url } = item;
 
-  // Properties
-  const Image = banner_url === "" ? Placeholder : banner_url;
+  // Components
+  const Logo = <img src={logo_url} className="logo" />;
 
   return (
     <header className="hero hero-details">
-      <img className="background-image" src={Image} />
+      <img
+        className="background-image"
+        src={banner_url}
+        onError={(event) => (event.currentTarget.src = Placeholder)}
+      />
       <div className="content">
-        <button className="white" onClick={() => onClick(videoCode)}>
+        {logo_url && Logo}
+        <button onClick={() => onClick(videoCode)} className="button-white">
           <img className="icon" src={IconPlay} />
           Play
         </button>

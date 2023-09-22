@@ -9,7 +9,7 @@ export default function VideoPlayer() {
   const { code } = useParams();
 
   // Properties
-  const videoSource = `https://www.youtube.com/embed/${code}`;
+  const videoSource = `https://youtube.com/embed/${code}`;
 
   return (
     <div id="video-player">

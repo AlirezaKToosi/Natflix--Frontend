@@ -1,7 +1,7 @@
 .navigation-bar {
   display: flex; /* for aligning items using modern CSS */
-  position: sticky;
-  top: 0; /* so the bar is stick to the top of the screen */
+  position: fixed;
+  left: 0;
   background-color: black;
   width: 100%;
   height: var(--navigation-bar);

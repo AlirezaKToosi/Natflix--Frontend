@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 1,
     "episode_number": 1,
     "title": "Seinfeld (pilot)",
@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 1,
     "episode_number": 2,
     "title": "The Stake Out",
@@ -21,7 +21,7 @@
   },
   {
     "id": 3,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 1,
     "episode_number": 3,
     "title": "The Robbery",
@@ -31,7 +31,7 @@
   },
   {
     "id": 4,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 2,
     "episode_number": 1,
     "title": "The Ex-Girlfriend",
@@ -41,7 +41,7 @@
   },
   {
     "id": 5,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 2,
     "episode_number": 2,
     "title": "The Pony Remark",
@@ -51,7 +51,7 @@
   },
   {
     "id": 6,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 2,
     "episode_number": 3,
     "title": "The Jacket",
@@ -61,7 +61,7 @@
   },
   {
     "id": 7,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 2,
     "episode_number": 4,
     "title": "The Phone Message",
@@ -71,7 +71,7 @@
   },
   {
     "id": 8,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 3,
     "episode_number": 2,
     "title": "The Note",
@@ -81,7 +81,7 @@
   },
   {
     "id": 9,
-    "media_id": 1,
+    "content_id": 1,
     "season_number": 3,
     "episode_number": 3,
     "title": "The Truth",

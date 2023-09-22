@@ -3,7 +3,7 @@ import { ChangeEvent } from "react";
 
 // Project files
 import Placeholder from "assets/images/placeholders/card-basic.png";
-import iInputImage from "types/iInputImage";
+import iInputImage from "interfaces/iInputImage";
 import readFile from "scripts/resize-image/readFile";
 import resizeImage from "scripts/resize-image/resizeImage";
 

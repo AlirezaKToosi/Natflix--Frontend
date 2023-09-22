@@ -2,6 +2,7 @@
   "name": "natflix-frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080/api/",
   "dependencies": {
     "@types/node": "^16.11.62",
     "@types/react": "^18.0.21",

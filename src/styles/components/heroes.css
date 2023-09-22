@@ -25,6 +25,10 @@
   padding: var(--page-space);
 }
 
+.hero .logo {
+  margin-bottom: var(--space-medium);
+}
+
 /* Specific changes for the hero inside the modal */
 .hero-details {
   place-items: end start;

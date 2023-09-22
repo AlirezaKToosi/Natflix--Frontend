@@ -2,7 +2,7 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
 // Project files
-import iUser from "types/iUser";
+import iUser from "interfaces/iUser";
 
 // Interfaces
 interface iProps {
